@@ -1,0 +1,184 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<meta charset="utf-8" /> 
+	<title>Chesapeake College LRC | Mobile</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" /> 
+	<link rel="stylesheet" href="./meta/m.css" /> 
+	<script src="http://code.jquery.com/jquery-1.5.min.js"></script> 
+	<script src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js"></script>
+	<!-- REM: your analytics here -->
+<body> 
+ 
+<!-- Start of home page -->
+<div data-role="page" id="home" data-theme="d"> 
+ 
+	<div data-role="header"> 
+		<h1>Chesapeake College LRC</h1> 
+	</div><!-- /header --> 
+ 
+	<div data-role="content">
+		<ul data-role="listview" data-inset="true">
+            <li><a href="#search">Search</a></li>
+            <li><a href="#hours">Hours</a></li>
+            <li><a href="#ask">Ask a Librarian</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#where" data-rel="dialog" data-transition="pop">Where</a></li>
+        </ul>		
+	
+	</div><!-- /content --> 
+
+	<div data-role="footer" data-id="myfooter" data-position="fixed"> 
+		<div class="controls" data-role="controlgroup" data-type="horizontal">
+    		<a href="#home" data-role="button" data-icon="home">Home</a>
+    		<a href="#search" data-role="button" data-icon="search">Search</a>
+    		<a href="#ask" data-role="button" data-icon="info">Ask</a>
+    		<a href="http://www.chesapeake.edu/library/" rel="external" data-role="button" data-icon="plus">Full site</a>
+		</div>
+	</div><!-- /footer --> 	
+</div><!-- /page -->
+
+<!-- Start of hours page --> 
+<div data-role="page" id="search" data-theme="d"> 
+ 
+	<div data-role="header"> 
+		<h1>Mobile @ Your Library</h1> 
+	</div><!-- /header --> 
+ 
+	<div data-role="content">	
+		<h2>Search the Library</h2> 
+            <form action="forms-results.php" method="get">
+                <fieldset>
+                	<input type="text" value="" />
+                    <div data-role="fieldcontain">
+                        <label for="select-options" class="select">Choose an option:</label>
+                        <select name="select-options" id="select-options">
+                            <option value="option1">Books, Videos, &amp; More</option>
+                            <option value="option2">Articles</option>
+                            <option value="option2">Databases</option>
+                        </select>
+                    </div>
+                    <button type="submit">Find</button>
+                </fieldset>
+            </form>
+		<p><a href="#home" data-direction="reverse">Back to home</a></p>	
+	</div><!-- /content --> 
+
+	<div data-role="footer" data-id="myfooter" data-position="fixed"> 
+		<div class="controls" data-role="controlgroup" data-type="horizontal">
+    		<a href="#home" data-role="button" data-icon="home">Home</a>
+    		<a href="#search" data-role="button" data-icon="search">Search</a>
+    		<a href="#ask" data-role="button" data-icon="info">Ask</a>
+    		<a href="http://www.chesapeake.edu/library/" rel="external" data-role="button" data-icon="plus">Full site</a>
+		</div>
+	</div><!-- /footer --> 	
+</div><!-- /page -->
+
+<!-- Start of hours page --> 
+<div data-role="page" id="hours" data-theme="d"> 
+ 
+	<div data-role="header"> 
+		<h1>Mobile @ Your Library</h1> 
+	</div><!-- /header --> 
+ 
+	<div data-role="content">	
+		<h2>Library Hours</h2> 
+		<ul class="hours">
+		   	<li>Monday-Tuesday-Weds: 12noon to 8pm</li>
+		   	<li>Thurs-Friday-Saturday: 10am to 6pm</li>
+		    <li>Sunday: Closed</li>
+		</ul>
+		<p><a href="#home" data-direction="reverse">Back to home</a></p>	
+	</div><!-- /content --> 
+
+	<div data-role="footer" data-id="myfooter" data-position="fixed"> 
+		<div class="controls" data-role="controlgroup" data-type="horizontal">
+    		<a href="#home" data-role="button" data-icon="home">Home</a>
+    		<a href="#search" data-role="button" data-icon="search">Search</a>
+    		<a href="#ask" data-role="button" data-icon="info">Ask</a>
+    		<a href="http://www.chesapeake.edu/library/" rel="external" data-role="button" data-icon="plus">Full site</a>
+		</div>
+	</div><!-- /footer -->  	
+</div><!-- /page -->
+
+<!-- Start of ask page --> 
+<div data-role="page" id="ask" data-theme="d"> 
+ 
+	<div data-role="header"> 
+		<h1>Mobile @ Your Library</h1> 
+	</div><!-- /header --> 
+ 
+	<div data-role="content">	
+		<h2>Ask a Librarian</h2>
+		<p><strong>Text Us!</strong></p>
+        <p>Send us a question as a text message at 1-406-219-1060. See <a href="http://www.lib.montana.edu/ask/textalibrarian.php" rel="external">more info and the demo</a></p>
+		<p><strong>Email Us!</strong></p>
+		<p class="indent">Send a <a href="http://www.lib.montana.edu//forms/email.php" rel="external">question via our email form</a>.</p>
+		<p><strong>Call Us!</strong></p>
+        <p class="indent">Voice Phone: 1-406-994-3171 (leave a message if we are not there)</p>
+		<p><a href="#home" data-rel="back">Back to home</a></p>	
+	</div><!-- /content --> 
+
+	<div data-role="footer" data-id="myfooter" data-position="fixed"> 
+		<div class="controls" data-role="controlgroup" data-type="horizontal">
+    		<a href="#home" data-role="button" data-icon="home">Home</a>
+    		<a href="#search" data-role="button" data-icon="search">Search</a>
+    		<a href="#ask" data-role="button" data-icon="info">Ask</a>
+    		<a href="http://www.chesapeake.edu/library/" rel="external" data-role="button" data-icon="plus">Full site</a>
+		</div>
+	</div><!-- /footer --> 
+
+</div><!-- /page --> 
+ 
+<!-- Start of about page --> 
+<div data-role="page" id="about" data-theme="d"> 
+ 
+	<div data-role="header"> 
+		<h1>Mobile @ Your Library</h1> 
+	</div><!-- /header --> 
+ 
+	<div data-role="content">	
+		<h2>About MSU Libraries</h2> 
+		<p>Renne Library was named after Roland R. Renne (1905-1989), the president of Montana State College from 1943 to 1964. Renne Library is centrally located on campus between the Strand Union Building and Reid Hall.</p>
+		<p><a id="feature" href="http://www.youtube.com/v/s1EGXkQtgTE" onClick="window.open(this.href,'popupwindow','width=500,height=250,location,scrollbars,resizable'); return false;" title="take virtual library tour">Take the Virtual Library Tour</a></p>
+		<p><a href="#home" data-rel="back">Back to home</a></p>	
+	</div><!-- /content --> 
+
+	<div data-role="footer" data-id="myfooter" data-position="fixed"> 
+		<div class="controls" data-role="controlgroup" data-type="horizontal">
+    		<a href="#home" data-role="button" data-icon="home">Home</a>
+    		<a href="#search" data-role="button" data-icon="search">Search</a>
+    		<a href="#ask" data-role="button" data-icon="info">Ask</a>
+    		<a href="http://www.chesapeake.edu/library/" rel="external" data-role="button" data-icon="plus">Full site</a>
+		</div>
+	</div><!-- /footer --> 
+
+</div><!-- /page --> 
+	   		
+<!-- Start of where page --> 
+<div data-role="page" id="where" data-theme="d"> 
+ 
+	<div data-role="header" data-theme="d"> 
+		<h1>Mobile @ Your Library</h1> 
+	</div><!-- /header --> 
+ 
+	<div data-role="content" data-theme="d">	
+		<h2>Where is MSU Libraries?</h2>
+		<p><img alt="map to library" src="http://maps.google.com/maps/api/staticmap?center=Bozeman,MT&zoom=13&size=310x310&markers=color:blue|
+45.666671,-111.04859&mobile=true&sensor=false" /></p>	
+		<p><a href="#home" data-rel="back">Back to home</a></p>	
+	</div><!-- /content --> 
+
+	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="d"> 
+		<div class="controls" data-role="controlgroup" data-type="horizontal">
+    		<a href="#home" data-role="button" data-icon="home">Home</a>
+    		<a href="#search" data-role="button" data-icon="search">Search</a>
+    		<a href="#ask" data-role="button" data-icon="info">Ask</a>
+    		<a href="http://www.chesapeake.edu/library/" rel="external" data-role="button" data-icon="plus">Full site</a>
+		</div>
+	</div><!-- /footer --> 
+
+</div><!-- /page --> 
+
+</body> 
+</html>
