@@ -23,10 +23,10 @@
 	<div data-role="content">
 		<ul data-role="listview" data-inset="true">
 			<li><a href="#search">Find Books &amp; DVDs</a></li>
-			<li><a href="#databases">Find Databases</a></li>
+			<li><a href="#databases">Mobile Research Resources</a></li>
 			<li><a href="#hours">Hours</a></li>
 			<li><a href="#ask">Ask a Librarian</a></li>
-			<li><a href=http://libguides.chesapeake.edu/mobile.php>Study Guides</a></li>
+			<li><a href=http://libguides.chesapeake.edu/mobile.php rel="external">Study Guides</a></li>
 			<li><a href="#where" data-rel="dialog" data-transition="pop">Where is the LRC?</a></li>
 		</ul>		
 	</div><!-- /content --> 
@@ -57,6 +57,7 @@
 		        <button type="submit">Find</button>
 		    </fieldset>
 		</form>
+		<p>Looking for online resources? They're <a href="#databases" title="mobile research resources">over here</a>.</p>
 	</div><!-- /content --> 
 
 	<div data-role="footer" data-id="myfooter" data-position="fixed"> 
@@ -76,22 +77,26 @@
 	</div><!-- /header -->
 	
 	<div data-role=content>
-		<h2>Find an Academic Database</h2>
-		<p>Select a link from the list below</p>
+		<h2>Mobile Research Resources</h2>
 		<dl>
 			<dt><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=mobile&defaultdb=aph"
-                            title="Academic Search Premier">Academic Search Premier</a>
+                            title="Academic Search Premier" rel="external">Academic Search Premier</a>
 			</dt>
-			<dd>General database which covers most academic fields.</dd>
-			<dt><a href="http://worldcatmobile.org/?site=www" title="WorldCat Mobile">WorldCat</a>
+			<dd>General academic database that covers most disciplines.</dd>
+			<dt><a href=http://m.eb.com/ title="Encyclop&aelig;dia Britannica" rel="external">Encyclop&aelig;dia
+			Britannica</a></dt>
+			<dd>Scholarly encyclopedia with background information on almost any subject.</dd>
+			<dt><a href=http://m.gutenberg.org/ title="Free eBooks" rel="external">Project Gutenberg</a></dt>
+			<dd>36,000 free eBooks in a variety of formats, from HTML to Kindle.
+			<dt><a href="http://books.google.com/m" title="Google Books Mobile" rel="external">Google Books</a>
 			</dt>
-			<dd>Catalog for thousands of libraries worldwide.</dd>
-			<dt><a href="http://books.google.com/m" title="Google Books Mobile">Google Books</a>
-			</dt>
-			<dd>Millions of digitized books, some excerpts and some full-text.</dd>
-			<dt><a href="http://mobile.wikipedia.org/" title="Wikipedia Mobile">Wikipedia</a>
+			<dd>Millions of digitized books, some excerpts &amp; some full-text.</dd>
+			<dt><a href="http://mobile.wikipedia.org/" title="Wikipedia Mobile" rel="external">Wikipedia</a>
 			</dt>
 			<dd>Free online encyclopedia with publicly-editable content.</dd>
+			<dt><a href="http://worldcatmobile.org/?site=www" title="WorldCat Mobile" rel="external">WorldCat</a>
+			</dt>
+			<dd>Catalog for thousands of libraries worldwide.</dd>
 		</dl>
 	</div><!-- /content -->
 	
@@ -119,7 +124,9 @@
 			<li>Friday: 8:00am to 4:30pm</li>
 			<li>Saturday: Closed</li>
 			<li>Sunday: 1:00pm to 5:00pm</li>
-		</ul>	
+		</ul>
+		<p>See the full website's <a href="http://www.chesapeake.edu/library/lrc_hours.asp" title="hours" rel=external>hours</a>
+		page for specific departments such as Academic Support &amp; the Testing Center.</p>
 	</div><!-- /content --> 
 
 	<div data-role="footer" data-id="myfooter" data-position="fixed"> 
@@ -141,13 +148,15 @@
  
 	<div data-role="content">	
 		<h2>Ask a Librarian</h2>
-		<p><strong>Text Us!</strong></p>
-		<p>Send us a question as a text message at 1-406-219-1060. See <a href="http://www.lib.montana.edu/ask/textalibrarian.php"
-		rel="external">more info and the demo</a></p>
-		<p><strong>Email Us!</strong></p>
-		<p class="indent">Send a <a href="http://www.lib.montana.edu//forms/email.php" rel="external">question via our email form</a>.</p>
-		<p><strong>Call Us!</strong></p>
-        <p class="indent">Voice Phone: 1-406-994-3171 (leave a message if we are not there)</p>
+		<p><strong>Email Us</strong></p>
+		<p class="indent">at our <a href="mailto:lrcdesk@chesapeake.edu?subject=Reference%20Question%20from%20LRC%20Mobile"
+			rel="external">lrcdesk</a> account. We will try to respond within 24 hours.</p>
+		<p><strong>Call Us</strong></p>
+		<p class="indent">at 410-827-5860 anytime during our regular <a href="#hours" title="hours">hours</a></p>
+		<p><strong>Chat with us</strong></p>
+		<p class=indent>Try out our online chat widget <a href="http://www.chesapeake.edu/library/librarian-chat.asp"
+			title="Chat with a Librarian">here</a></p>
+		<!-- NB change to mobile chat widget -->
 	</div><!-- /content --> 
 
 	<div data-role="footer" data-id="myfooter" data-position="fixed"> 
