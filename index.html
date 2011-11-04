@@ -6,7 +6,15 @@
 		<meta description="A mobile-friendly website for the Chesapeake College Learning Resource Center. View the LRC hours, search for books,
 		visit our academic databases, and ask a librarianÐall on your mobile device!" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" /> 
-		<link rel="stylesheet" href="./meta/m.css" /> 
+		<link rel="stylesheet" href="./meta/m.css" />
+		<!-- REM: add favicon -->
+		<!-- REM: add 3 links rel=
+		apple-touch-icon-57x57.png (old iPhone)
+		apple-touch-icon-72x72.png (iPad)
+		apple-touch-icon-114x114.png (iPhone4)
+		for iOS, Android icons
+		see http://www.bernskiold.com/2011/01/07/adding-an-iphoneipad-icon-for-your-website/ -->
+		<!-- REM: look into equivalent option for Android -->
 		<script src="http://code.jquery.com/jquery-1.5.min.js"></script> 
 		<script src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js"></script>
 		<!-- REM: your analytics here -->
@@ -23,22 +31,20 @@
 	<div data-role="content">
 		<ul data-role="listview" data-inset="true">
 			<li><a href="#search">Find Books &amp; DVDs</a></li>
-			<li><a href="#databases">Mobile Research Resources</a></li>
+			<li><a href="#resources">Online Resources</a></li>
 			<li><a href="#hours">Hours</a></li>
 			<li><a href="#ask">Ask a Librarian</a></li>
 			<li><a href=http://libguides.chesapeake.edu/mobile.php rel="external">Study Guides</a></li>
 			<li><a href="#where" data-rel="dialog" data-transition="pop">Where is the LRC?</a></li>
-		</ul>		
+		</ul>
+		<h2 class=center>Chesapeake College LRC</h2>
 	</div><!-- /content --> 
 
 	<div data-role="footer" data-id="myfooter" data-position="fixed"> 
 		<div class="controls" data-role="controlgroup" data-type="horizontal">
-			<a href="#home" data-role="button" data-icon="home">Home</a>
-			<a href="#search" data-role="button" data-icon="search">Search</a>
-			<a href="#ask" data-role="button" data-icon="info">Ask</a>
 			<a href="http://www.chesapeake.edu/library/" rel="external" data-role="button" data-icon="plus">Full site</a>
 		</div>
-	</div><!-- /footer --> 	
+	</div><!-- /footer --> 
 </div><!-- /page -->
 
 <!-- Start of library catalog page --> 
@@ -57,7 +63,7 @@
 		        <button type="submit">Find</button>
 		    </fieldset>
 		</form>
-		<p>Looking for online resources? They're <a href="#databases" title="mobile research resources">over here</a>.</p>
+		<p>Looking for online resources? They're <a href="#resources" title="mobile research resources">over here</a>.</p>
 	</div><!-- /content --> 
 
 	<div data-role="footer" data-id="myfooter" data-position="fixed"> 
@@ -70,14 +76,14 @@
 	</div><!-- /footer -->
 </div><!-- end catalog page -->
 
-<!-- start of databases page -->
-<div data-role="page" id=databases data-theme=b>
+<!-- start of resources page -->
+<div data-role="page" id=resources data-theme=b>
 	<div data-role=header>
 		<h1>LRC Mobile</h1>
 	</div><!-- /header -->
 	
 	<div data-role=content>
-		<h2>Mobile Research Resources</h2>
+		<h2>Online Resources</h2>
 		<dl>
 			<dt><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=mobile&defaultdb=aph"
                             title="Academic Search Premier" rel="external">Academic Search Premier</a>
@@ -108,7 +114,7 @@
 			<a href="http://www.chesapeake.edu/library/" rel="external" data-role="button" data-icon="plus">Full site</a>
 		</div>
 	</div><!-- /footer -->
-</div> <!-- end databases page -->
+</div> <!-- end resources page -->
 
 <!-- Start of hours page --> 
 <div data-role="page" id="hours" data-theme="b"> 
@@ -152,7 +158,7 @@
 		<p class="indent">at our <a href="mailto:lrcdesk@chesapeake.edu?subject=Reference%20Question%20from%20LRC%20Mobile"
 			rel="external">lrcdesk</a> account. We will try to respond within 24 hours.</p>
 		<p><strong>Call Us</strong></p>
-		<p class="indent">at 410-827-5860 anytime during our regular <a href="#hours" title="hours">hours</a></p>
+		<p class="indent">at 410-827-5860</p>
 		<p><strong>Chat with us</strong></p>
 		<p class=indent>Try out our online chat widget <a href="http://www.chesapeake.edu/library/librarian-chat.asp"
 			title="Chat with a Librarian">here</a></p>
@@ -177,21 +183,12 @@
 		<h1>LRC Mobile</h1> 
 	</div><!-- /header --> 
  
-	<div data-role="content" data-theme="b">	
-		<h2>Where is the Chesapeake College LRC?</h2>
-		<p><img alt="map to library"
-			src="http://maps.google.com/maps/api/staticmap?center=38.952484,-76.083992&zoom=15&size=310x310&markers=color:blue|38.953235,-76.084571&scale=2&maptype=hybrid&mobile=true&sensor=false" />
+	<div data-role="content" data-theme="b" class=center>	
+		<h2>Where is the LRC?</h2>
+		<p><img alt="map of Chesapeake College campus with a blue marker on the LRC"
+			src="http://maps.google.com/maps/api/staticmap?center=38.952484,-76.083992&zoom=15&size=130x130&markers=color:blue|38.953235,-76.084571&scale=2&maptype=satellite&mobile=true&sensor=false" />
 		</p>
 	</div><!-- /content --> 
-
-	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b"> 
-		<div class="controls" data-role="controlgroup" data-type="horizontal">
-			<a href="#home" data-role="button" data-icon="home">Home</a>
-			<a href="#search" data-role="button" data-icon="search">Search</a>
-			<a href="#ask" data-role="button" data-icon="info">Ask</a>
-			<a href="http://www.chesapeake.edu/library/" rel="external" data-role="button" data-icon="plus">Full site</a>
-		</div>
-	</div><!-- /footer --> 
 </div><!-- end Google Maps page --> 
 
 </body> 
