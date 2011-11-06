@@ -3,9 +3,10 @@
 	<head> 
 		<meta charset="utf-8" />
 		<title>Chesapeake College LRC | Mobile</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta description="A mobile-friendly website for the Chesapeake College Learning Resource Center. View the LRC hours, search for books,
-		visit our academic databases, and ask a librarianÐall on your mobile device!" />
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" /> 
+		visit our academic databases, and ask a librarian; all on your mobile device!" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" /> 
 		<link rel="stylesheet" href="./meta/m.css" />
 		<!-- REM: add favicon -->
 		<!-- REM: add 3 links rel=
@@ -14,17 +15,16 @@
 		apple-touch-icon-114x114.png (iPhone4)
 		for iOS, Android icons
 		see http://www.bernskiold.com/2011/01/07/adding-an-iphoneipad-icon-for-your-website/ -->
-		<!-- REM: look into equivalent option for Android -->
-		<script src="http://code.jquery.com/jquery-1.5.min.js"></script> 
-		<script src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
 		<!-- REM: your analytics here -->
 	</head>
-<body> 
- 
+<body>
+
 <!-- Start of home page -->
 <div data-role="page" id="home" data-theme="b"> 
  
-	<div data-role="header"> 
+	<div data-role="header" data-theme="b"> 
 		<h1>LRC Mobile</h1> 
 	</div><!-- /header --> 
  
@@ -40,7 +40,7 @@
 		<h2 class=center>Chesapeake College LRC</h2>
 	</div><!-- /content --> 
 
-	<div data-role="footer" data-id="myfooter" data-position="fixed"> 
+	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b"> 
 		<div class="controls" data-role="controlgroup" data-type="horizontal">
 			<a href="#home" data-role="button" data-icon="home">Home</a>
 			<a href="#search" data-role="button" data-icon="search">Search</a>
@@ -53,7 +53,7 @@
 <!-- Start of library catalog page --> 
 <div data-role="page" id="search" data-theme="b"> 
  
-	<div data-role="header"> 
+	<div data-role="header" data-theme="b"> 
 		<h1>LRC Mobile</h1> 
 	</div><!-- /header --> 
  
@@ -69,7 +69,7 @@
 		<p>Looking for online resources? They're <a href="#resources" title="mobile research resources">over here</a>.</p>
 	</div><!-- /content --> 
 
-	<div data-role="footer" data-id="myfooter" data-position="fixed"> 
+	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b"> 
 		<div class="controls" data-role="controlgroup" data-type="horizontal">
 			<a href="#home" data-role="button" data-icon="home">Home</a>
 			<a href="#search" data-role="button" data-icon="search">Search</a>
@@ -80,8 +80,8 @@
 </div><!-- end catalog page -->
 
 <!-- start of resources page -->
-<div data-role="page" id=resources data-theme=b>
-	<div data-role=header>
+<div data-role="page" id=resources data-theme="b">
+	<div data-role=header data-theme="b">
 		<h1>LRC Mobile</h1>
 	</div><!-- /header -->
 	
@@ -109,7 +109,7 @@
 		</dl>
 	</div><!-- /content -->
 	
-		<div data-role="footer" data-id="myfooter" data-position="fixed"> 
+		<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b"> 
 		<div class="controls" data-role="controlgroup" data-type="horizontal">
 			<a href="#home" data-role="button" data-icon="home">Home</a>
 			<a href="#search" data-role="button" data-icon="search">Search</a>
@@ -122,7 +122,7 @@
 <!-- Start of hours page --> 
 <div data-role="page" id="hours" data-theme="b"> 
  
-	<div data-role="header"> 
+	<div data-role="header" data-theme="b"> 
 		<h1>LRC Mobile</h1> 
 	</div><!-- /header --> 
  
@@ -138,7 +138,7 @@
 		page for specific departments such as Academic Support &amp; the Testing Center.</p>
 	</div><!-- /content --> 
 
-	<div data-role="footer" data-id="myfooter" data-position="fixed"> 
+	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b"> 
 		<div class="controls" data-role="controlgroup" data-type="horizontal">
 			<a href="#home" data-role="button" data-icon="home">Home</a>
 			<a href="#search" data-role="button" data-icon="search">Search</a>
@@ -151,7 +151,7 @@
 <!-- Start of ask page --> 
 <div data-role="page" id="ask" data-theme="b"> 
  
-	<div data-role="header"> 
+	<div data-role="header" data-theme="b"> 
 		<h1>LRC Mobile</h1> 
 	</div><!-- /header --> 
  
@@ -165,10 +165,10 @@
 		<p><strong>Chat with us</strong></p>
 		<p class=indent>Try out our online chat widget <a href="http://www.chesapeake.edu/library/librarian-chat.asp"
 			title="Chat with a Librarian">here</a></p>
-		<!-- NB change to mobile chat widget -->
+		<!-- REM: change to mobile chat widget -->
 	</div><!-- /content --> 
 
-	<div data-role="footer" data-id="myfooter" data-position="fixed"> 
+	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b"> 
 		<div class="controls" data-role="controlgroup" data-type="horizontal">
 			<a href="#home" data-role="button" data-icon="home">Home</a>
 			<a href="#search" data-role="button" data-icon="search">Search</a>
