@@ -1,0 +1,3 @@
+#files ignored by git
+#production files
+prod/*
