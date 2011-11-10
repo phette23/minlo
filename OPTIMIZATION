@@ -1,0 +1,12 @@
+OPTIMIZATION
+Mobile sites need to be as sleek and quick as possible to deliver a good user experience. Here's a few post-production techniques that can be applied to your sites such that they'll load quicker and run faster.
+
+IMAGES
+Scale them to the exact size that will be used. I use Yahoo!'s Smush.It (http://www.smushit.com/ysmush.it/) to reduce size even further without sacrificing quality. As an example, my three iOS icons were cut to about 2/3rds size after running through Smush.It, which is a HUGE difference.
+There's also a growing responsive design technique that uses server-side programming to deliver images optimized to particular screen sizes. I didn't employ that in the mobile template but it's worth looking into. See Sencha.io (https://www.sencha.com/products/io/) or Adaptive-Images (http://adaptive-images.com/) for instance.
+
+MINIFICATION
+Minification basically removes useless characters like unsemantic whitespace from your documents, resulting in a reduced file size and thus quicker loads. Scripts, HTML, and CSS shouldn't be affected by minification since it only removes meaningless formatting that is only for human readability as opposed to machine. Here are some recommended tools.
+JavaScript - Pretty Diff (http://prettydiff.com/), Packer (http://dean.edwards.name/packer), use the pre-minified jQuery Mobile library (the link I use in the template)
+HTML - Pretty Diff, HTML Compressor (https://code.google.com/p/htmlcompressor), Kangax's HTML Minifier (http://kangax.github.com/html-minifier)
+CSS - Pretty Diff again, cssmin (https://code.google.com/p/cssmin)
