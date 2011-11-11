@@ -9,9 +9,9 @@
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" /> 
 		<link rel="stylesheet" href="./meta/m.css" />
 		<!-- icons for various iOS devices  -->
-		<link rel="apple-touch-icon" sizes="57" href="./icons/older-iphones57.png" />
-		<link rel="apple-touch-icon" sizes="72" href="./icons/ipad72.png" />
-		<link rel="apple-touch-icon" sizes="114" href="./icons/4thgen-iphone114.png" /> 
+		<link rel="apple-touch-icon" sizes="114x114" href="./icons/4thgen-iphone114.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="./icons/ipad72.png" />
+		<link rel="apple-touch-icon" href="./icons/older-iphones57.png" />
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
 		<!-- REM: your analytics here -->
@@ -19,7 +19,7 @@
 <body>
 
 <!-- Start of home page -->
-<div data-role="page" id="home" data-theme="b">
+<div data-role="page" id="home" data-theme="b" data-dom-cache="true">
 	<div data-role="header" data-theme="b">
 		<h1>LRC Mobile</h1> 
 	</div><!-- /header --> 
@@ -47,7 +47,7 @@
 <!-- Start of library catalog page --> 
 <div data-role="page" id="search" data-theme="b">
 	<div data-role="header" data-theme="b">
-		<a data-rel="back" data-role="button" data-icon="arrow-l">Back</a>
+		<a data-rel="back" data-role="button" data-icon="arrow-l" data-direction="reverse">Back</a>
 		<h1>LRC Mobile</h1> 
 	</div><!-- /header -->
 	<div data-role="content">	
@@ -74,7 +74,7 @@
 <!-- start of resources page -->
 <div data-role="page" id=resources data-theme="b">
 	<div data-role=header data-theme="b">
-		<a data-rel="back" data-role="button" data-icon="arrow-l">Back</a>
+		<a data-rel="back" data-role="button" data-icon="arrow-l" data-direction="reverse">Back</a>
 		<h1>LRC Mobile</h1>
 	</div><!-- /header -->
 	<div data-role=content>
@@ -113,7 +113,7 @@
 <!-- Start of hours page --> 
 <div data-role="page" id="hours" data-theme="b">
 	<div data-role="header" data-theme="b">
-		<a data-rel="back" data-role="button" data-icon="arrow-l">Back</a>
+		<a data-rel="back" data-role="button" data-icon="arrow-l" data-direction="reverse">Back</a>
 		<h1>LRC Mobile</h1> 
 	</div><!-- /header -->
 	<div data-role="content">	
@@ -140,7 +140,7 @@
 <!-- Start of ask page --> 
 <div data-role="page" id="ask" data-theme="b">
 	<div data-role="header" data-theme="b">
-		<a data-rel="back" data-role="button" data-icon="arrow-l">Back</a>
+		<a data-rel="back" data-role="button" data-icon="arrow-l" data-direction="reverse">Back</a>
 		<h1>LRC Mobile</h1> 
 	</div><!-- /header --> 
 	<div data-role="content">	
@@ -149,10 +149,10 @@
 		<p class="indent">at our <a href="mailto:lrcdesk@chesapeake.edu?subject=Reference%20Question%20from%20LRC%20Mobile"
 			rel="external">lrcdesk</a> account. We will try to respond within 24 hours.</p>
 		<p><strong>Call Us</strong></p>
-		<p class="indent">at 410-827-5860</p>
+		<p class="indent">at 410-827-5860.</p>
 		<p><strong>Chat with us</strong></p>
-		<p class=indent>Try out our online chat widget <a href="http://www.chesapeake.edu/library/librarian-chat.asp"
-			title="Chat with a Librarian">here</a></p>
+		<p class=indent>Try out our online chat widget <a href="#chat"
+			title="Chat with a Librarian">here</a>.</p>
 		<!-- REM: change to mobile chat widget -->
 	</div><!-- /content --> 
 	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b"> 
@@ -163,8 +163,22 @@
 			<a href="http://www.chesapeake.edu/library/" rel="external" data-role="button" data-icon="plus">Full site</a>
 		</div>
 	</div><!-- /footer --> 
-</div><!-- end ask page --> 
-	   		
+</div><!-- end ask page -->
+
+<!-- Start of chat page --> 
+<div data-role="page" id="chat" data-theme="b">
+	<div data-role="header" data-theme="b">
+		<a data-rel="back" data-role="button" data-icon="arrow-l" data-direction="reverse">Back</a>
+		<h1>LRC Mobile</h1> 
+	</div><!-- /header -->
+	<div data-role="content">	
+		<div class="needs-js">
+		JavaScript disabled or chat unavailable.
+		</div>
+	</div><!-- /content -->
+	<!-- insert Library H3lp chat widget script here -->
+</div><!-- end chat page -->
+
 <!-- Start of Google Maps page --> 
 <div data-role="page" id="where" data-theme="b"> 
 	<div data-role="header" data-theme="b">
