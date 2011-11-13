@@ -1,3 +1,5 @@
 #files ignored by git
 #production files
 prod/*
+#Komodo Project
+LRC-Mobile.komodoproject
