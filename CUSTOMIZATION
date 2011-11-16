@@ -8,6 +8,7 @@ To make this site useful for your library, you'll obviously need to remove the C
 -> Change the catalog search to work with your catalog. If you have a mobile-friendly catalog, this would be a good place to tie into it.
 -> Replace our LibGuides site with your study guide equivalent. If you do have LibGuides, make sure to leave "mobile.php" on the end of the URL so users get the mobile version.
 -> Change the hours to match your open hours.
+-> Add in a link to your chat reference widget on the chat page. We use Library H3lp and all I have to do is insert their script.
 -> Change the color scheme to one that suits your institution. You can choose from a set of 5 themes (a through e) using the data-theme attribute. You can develop a custom theme with the jQuery Themeroller: http://jquerymobile.com/themeroller/ - I would recommend doing so unless you're really in a rush. Building a single theme saves you a lot of bytes in your CSS file, since going with the default includes all the themes you don't use as well.
 
 The Mobile Research Resources page might be the only one you don't need to tweak, but you may need to change the Academic Search Premier link to work with your proxy server.
