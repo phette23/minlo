@@ -1,5 +1,6 @@
 CACHE MANIFEST
-#v4
+#v5
+
 CACHE:
 #img
 //maps.google.com/maps/api/staticmap?center=38.952484,-76.083992&zoom=15&size=130x130&markers=color:blue|38.953235,-76.084571&scale=2&maptype=satellite&mobile=true&sensor=false
@@ -7,7 +8,7 @@ CACHE:
 //code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css
 /meta/m.css
 #javascript
-//code.jquery.com/jquery-1.6.4.min.js
+//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js
 //code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js
 
 NETWORK:
