@@ -1,28 +1,34 @@
-<!DOCTYPE html> 
-<html manifest="m.appcache"> 
-	<head> 
+<!DOCTYPE html>
+<html manifest="m.appcache">
+	<head>
 		<meta charset="utf-8" />
 		<title>Your Library | Mobile</title>
+		<!-- essential for mobile scaling -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- mobile web app meta tag
+		see http://developer.apple.com/library/safari/#documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta description="A mobile-friendly website for the Your Library. View the library hours, search for books,
 		visit our academic databases, and ask a librarian; all on your mobile device!" />
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+		<!-- protocol-relative URL, served from jQuery CDN -->
+		<link rel="stylesheet" href="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 		<link rel="stylesheet" href="./meta/m.css" />
 		<!-- icons for various iOS devices  -->
 		<link rel="apple-touch-icon" sizes="114x114" href="./icons/4thgen-iphone114.png" />
 		<link rel="apple-touch-icon" sizes="72x72" href="./icons/ipad72.png" />
 		<link rel="apple-touch-icon" href="./icons/older-iphones57.png" />
+		<!-- served from Google CDN instead of jQuery b/c more liked to be cached in visitor's browser -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-		<!-- REM: your analytics here -->
+		<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+		<!-- REM: your analytics here! -->
 	</head>
 <body>
 
 <!-- Start of home page -->
 <div data-role="page" id="home" data-theme="b" data-dom-cache="true">
 	<div data-role="header" data-theme="b">
-		<h1>Library Mobile</h1> 
-	</div><!-- /header --> 
+		<h1>Library Mobile</h1>
+	</div><!-- /header -->
 	<div data-role="content">
 		<ul data-role="listview" data-inset="true">
 			<li><a href="#search">Find Books &amp; DVDs</a></li>
@@ -35,7 +41,7 @@
 		</ul>
 		<h2 class=center>Your Library</h2>
 	</div><!-- /content -->
-	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b"> 
+	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b">
 		<div class="controls" data-role="controlgroup" data-type="horizontal">
 			<a href="#home" data-role="button" data-icon="home">Home</a>
 			<a href="#search" data-role="button" data-icon="search">Search</a>
@@ -44,16 +50,16 @@
 			<!-- change link to your library's full website
 			a simple search & replace should work -->
 		</div>
-	</div><!-- /footer --> 
+	</div><!-- /footer -->
 </div><!-- /page -->
 
-<!-- Start of library catalog page --> 
+<!-- Start of library catalog page -->
 <div data-role="page" id="search" data-theme="b">
 	<div data-role="header" data-theme="b">
 		<a data-rel="back" data-role="button" data-icon="arrow-l" data-direction="reverse">Back</a>
-		<h1>Library Mobile</h1> 
+		<h1>Library Mobile</h1>
 	</div><!-- /header -->
-	<div data-role="content">	
+	<div data-role="content">
 		<h2>Search the Library Catalog</h2>
 		<p>Find books, eBooks, DVDs, &amp; more...</p>
 		<form action="http://catalog.chesapeake.edu/view.aspx" method="get">
@@ -65,7 +71,7 @@
 		</form>
 		<p>Looking for online resources? They're <a href="#resources" title="mobile research resources">over here</a>.</p>
 	</div><!-- /content -->
-	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b"> 
+	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b">
 		<div class="controls" data-role="controlgroup" data-type="horizontal">
 			<a href="#home" data-role="button" data-icon="home">Home</a>
 			<a href="#search" data-role="button" data-icon="search">Search</a>
@@ -91,9 +97,9 @@
 				Britannica<br><em> scholarly encyclopedia</em></a></li>
 			<!-- might want to remove or alter these top two depending on your subscriptions
 			resources below are all free -->
-			<li><a href=http://m.gutenberg.org/ title="Free eBooks" rel="external">Project Gutenberg<br><em> 
+			<li><a href=http://m.gutenberg.org/ title="Free eBooks" rel="external">Project Gutenberg<br><em>
 				26,000 free eBooks</em></a></li>
-			<li><a href="http://m.medlineplus.gov" title="MedlinePlus" rel="external">MedlinePlus<br><em> 
+			<li><a href="http://m.medlineplus.gov" title="MedlinePlus" rel="external">MedlinePlus<br><em>
 				definitions of medical terms</em></a></li>
 			<li><a href="http://m.hathitrust.org/" title="Hathi Trust">Hathi Trust<br><em>Digital library
 			with thousands of free books</em></a></li>
@@ -107,7 +113,7 @@
 				search thousands of libraries</em></a></li>
 		</ul>
 	</div><!-- /content -->
-		<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b"> 
+		<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b">
 		<div class="controls" data-role="controlgroup" data-type="horizontal">
 			<a href="#home" data-role="button" data-icon="home">Home</a>
 			<a href="#search" data-role="button" data-icon="search">Search</a>
@@ -117,14 +123,14 @@
 	</div><!-- /footer -->
 </div> <!-- end resources page -->
 
-<!-- Start of hours page --> 
+<!-- Start of hours page -->
 <div data-role="page" id="hours" data-theme="b">
 	<div data-role="header" data-theme="b">
 		<a data-rel="back" data-role="button" data-icon="arrow-l" data-direction="reverse">Back</a>
-		<h1>Library Mobile</h1> 
+		<h1>Library Mobile</h1>
 	</div><!-- /header -->
-	<div data-role="content">	
-		<h2>Library Hours</h2> 
+	<div data-role="content">
+		<h2>Library Hours</h2>
 		<ul class="hours">
 		   	<li>Monday-Thursday: 8:00am to 9:00pm</li>
 			<li>Friday: 8:00am to 4:30pm</li>
@@ -135,23 +141,23 @@
 		page for specific departments such as Academic Support &amp; the Testing Center.</p>
 		<!-- change link to your full site hours page -->
 	</div><!-- /content -->
-	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b"> 
+	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b">
 		<div class="controls" data-role="controlgroup" data-type="horizontal">
 			<a href="#home" data-role="button" data-icon="home">Home</a>
 			<a href="#search" data-role="button" data-icon="search">Search</a>
 			<a href="#ask" data-role="button" data-icon="info">Ask</a>
 			<a href="http://www.chesapeake.edu/library/" rel="external" data-role="button" data-icon="plus">Full site</a>
 		</div>
-	</div><!-- /footer -->  	
+	</div><!-- /footer -->
 </div><!-- end hours page -->
 
-<!-- Start of ask page --> 
+<!-- Start of ask page -->
 <div data-role="page" id="ask" data-theme="b">
 	<div data-role="header" data-theme="b">
 		<a data-rel="back" data-role="button" data-icon="arrow-l" data-direction="reverse">Back</a>
-		<h1>Library Mobile</h1> 
-	</div><!-- /header --> 
-	<div data-role="content">	
+		<h1>Library Mobile</h1>
+	</div><!-- /header -->
+	<div data-role="content">
 		<h2>Ask a Librarian</h2>
 		<ul data-role="listview" data-inset="true">
 			<li><a href="mailto:library@example.edu?subject=Reference%20Question%20from%20Library%20Mobile"
@@ -162,24 +168,24 @@
 			<li><a href="#chat" title="Chat with a Librarian">Chat With Us</a></li>
 			<!-- REM: change to mobile chat widget -->
 		</ul>
-	</div><!-- /content --> 
-	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b"> 
+	</div><!-- /content -->
+	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b">
 		<div class="controls" data-role="controlgroup" data-type="horizontal">
 			<a href="#home" data-role="button" data-icon="home">Home</a>
 			<a href="#search" data-role="button" data-icon="search">Search</a>
 			<a href="#ask" data-role="button" data-icon="info">Ask</a>
 			<a href="http://www.chesapeake.edu/library/" rel="external" data-role="button" data-icon="plus">Full site</a>
 		</div>
-	</div><!-- /footer --> 
+	</div><!-- /footer -->
 </div><!-- end ask page -->
 
-<!-- Start of chat page --> 
+<!-- Start of chat page -->
 <div data-role="page" id="chat" data-theme="b">
 	<div data-role="header" data-theme="b">
 		<a data-rel="back" data-role="button" data-icon="arrow-l" data-direction="reverse">Back</a>
-		<h1>Library Mobile</h1> 
+		<h1>Library Mobile</h1>
 	</div><!-- /header -->
-	<div data-role="content">	
+	<div data-role="content">
 		<div class="needs-js">
 		JavaScript disabled or chat unavailable.
 		</div>
@@ -187,18 +193,18 @@
 	<!-- insert Library H3lp chat widget script here -->
 </div><!-- end chat page -->
 
-<!-- Start of Google Maps page --> 
-<div data-role="page" id="where" data-theme="b"> 
+<!-- Start of Google Maps page -->
+<div data-role="page" id="where" data-theme="b">
 	<div data-role="header" data-theme="b">
-		<h1>Library Mobile</h1> 
-	</div><!-- /header --> 
-	<div data-role="content" data-theme="b" class=center>	
+		<h1>Library Mobile</h1>
+	</div><!-- /header -->
+	<div data-role="content" data-theme="b" class=center>
 		<h2>Where is the Library?</h2>
 		<p><img alt="map of Chesapeake College campus with a blue marker on the LRC"
 			src="//maps.google.com/maps/api/staticmap?center=38.952484,-76.083992&zoom=15&size=130x130&markers=color:blue|38.953235,-76.084571&scale=2&maptype=satellite&mobile=true&sensor=false" />
 		<!-- change map to center on your location -->
 		</p>
-	</div><!-- /content --> 
+	</div><!-- /content -->
 </div><!-- end Google Maps page -->
 
 </body>
