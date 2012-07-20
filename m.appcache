@@ -1,17 +1,17 @@
 CACHE MANIFEST
-#v6
+# v7
 
 CACHE:
-#img
+# Images
 //maps.google.com/maps/api/staticmap?center=38.952484,-76.083992&zoom=15&size=130x130&markers=color:blue|38.953235,-76.084571&scale=2&maptype=satellite&mobile=true&sensor=false
 
-#CSS
-//code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css
+# CSS
+//code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css
 /meta/m.css
 
-#javascript
+# JavaScript
 //ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js
-//code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js
+//code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js
 
 NETWORK:
 *
