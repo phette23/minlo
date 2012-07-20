@@ -5,13 +5,13 @@
 		<title>Your Library | Mobile</title>
 		<!-- essential for mobile scaling -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- mobile web app meta tag
+		<!-- mobile web meta tag
 		see http://developer.apple.com/library/safari/#documentation/appleapplications/reference/SafariHTMLRef/Articles/MetaTags.html -->
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta description="A mobile-friendly website for the Your Library. View the library hours, search for books,
 		visit our academic databases, and ask a librarian; all on your mobile device!" />
 		<!-- protocol-relative URL, served from jQuery CDN -->
-		<link rel="stylesheet" href="//code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+		<link rel="stylesheet" href="//code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
 		<link rel="stylesheet" href="./meta/m.css" />
 		<!-- icons for various iOS devices  -->
 		<link rel="apple-touch-icon" sizes="114x114" href="./icons/4thgen-iphone114.png" />
@@ -19,17 +19,9 @@
 		<link rel="apple-touch-icon" href="./icons/older-iphones57.png" />
 		<!-- served from Google CDN instead of jQuery b/c more liked to be cached in visitor's browser -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<!-- override default page transition (fade) - must run this script before jQuerty Mobile loads -->
-		<script>
-		(function($) {
-			$(document).bind("mobileinit", function(){
-				$.extend( $.mobile , {
-					defaultPageTransition: "slide"
-				});
-			});
-		}(jQuery));
-		</script>
-		<script src="//code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+		<!-- override default page transition (fade) - must run before jQuerty Mobile loads -->
+		<script src="js/custom.js"></script>
+		<script src="//code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
 		<!-- REM: your analytics here! -->
 	</head>
 <body>
@@ -70,16 +62,16 @@
 		<h1>Library Mobile</h1>
 	</div><!-- /header -->
 	<div data-role="content">
-		<h2>Search the Library Catalog</h2>
-		<p>Find books, eBooks, DVDs, &amp; more...</p>
-		<form action="http://catalog.chesapeake.edu/Mobile/Search/Results/" method="get">
-			<!-- this form will be different depending on your catalog -->
+		<h2>Books & DVDs</h2>
+		<form action="http://catalog.chesapeake.edu/Mobile/Search/Results/" method="get" role="search">
+			<label id="chescat-label">Search for books, eBooks, DVDs, & more.</label>
 		    <fieldset>
-                	<input type="search" name="t" value="" />
+                <input type="search" name="t" x-webkit-speech x-webkit-grammar="builtin:search" aria-labelledby="chescat-label" />
 		        <button type="submit">Find</button>
 		    </fieldset>
 		</form>
-		<p>Looking for online resources? They're <a href="#resources" title="mobile research resources">over here</a>.</p>
+		<p>Looking for online resources? Click below!</p>
+		<p><a href="#resources" title="mobile research resources" data-role="button">Articles & eBooks</a></p>
 	</div><!-- /content -->
 	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b">
 		<div class="controls" data-role="controlgroup" data-type="horizontal">
@@ -100,8 +92,7 @@
 	<div data-role=content>
 		<h2>Online Resources</h2>
 		<ul data-role="listview" data-inset="true">
-			<li><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=mobile&defaultdb=aph"
-                            title="Academic Search Premier">Academic Search Premier<br><em>
+			<li><a href="http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=mobile&defaultdb=aph" title="Academic Search Premier">Academic Search Premier<br><em>
 				general academic database</em></a></li>
 			<li><a href=http://m.eb.com/ title="Encyclop&aelig;dia Britannica">Encyclop&aelig;dia
 				Britannica<br><em> scholarly encyclopedia</em></a></li>
