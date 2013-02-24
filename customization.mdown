@@ -1,14 +1,14 @@
-CUSTOMIZATION
-To make this site useful for your library, you'll obviously need to remove the Chesapeake College LRC content and replace it with your own. I've tried to provide a list here of all the content to specific to us.
+# Customization
 
--> Remove the analytics comment in the head tag and insert your own analytics code.
--> Review the Ask a Librarian code and change the phone number, email address, and chat link. Insert your own Library H3lp, Meebo, or other chat widget on the chat page.
--> Change the "full site" link at the bottom of each page to your full site. A simple search & replace should do it.
--> Change the longitude  latitude of the Google Maps API center position to something more suitable for your institution. Move the blue marker as well.
--> Change the catalog search to work with your catalog. If you have a mobile-friendly catalog, this would be a good place to tie into it.
--> Replace our LibGuides site with your study guide equivalent. If you do have LibGuides, make sure to leave "mobile.php" on the end of the URL so users get the mobile version.
--> Change the hours to match your open hours.
--> Add in a link to your chat reference widget on the chat page. We use Library H3lp and all I have to do is insert their script.
--> Change the color scheme to one that suits your institution. You can choose from a set of 5 themes (a through e) using the data-theme attribute. You can develop a custom theme with the jQuery Themeroller: http://jquerymobile.com/themeroller/ - I would recommend doing so unless you're really in a rush. Building a single theme saves you a lot of bytes in your CSS file, since going with the default includes all the themes you don't use as well.
+To make this site useful for your library, you'll obviously need to remove the generic content that points to places like [Worldcat](http://www.worldcat.org) or the [Internet Public Library](http://www.ipl.org) and replace it with your own. I've tried to provide a list here of all the content that should be customized, but if you scan through the `index.html` these places are all marked with a comment like `<!-- *CHANGE* this thing -->`.
 
-The Mobile Research Resources page might be the only one you don't need to tweak, but you may need to change the Academic Search Premier link to work with your proxy server.
+- Review the Ask a Librarian code and change the email address and phone numbers. Insert your own Library H3lp, LibChat, or other chat widget on the chat page.
+- Change the "full site" link at the bottom of each page to your full site. A simple search & replace should do it.
+- Change the longitude/latitude of the Google Maps API center position to something more suitable for your institution. Move the blue marker as well.
+- Change the catalog search to work with your catalog. If you have a mobile-friendly catalog, this would be a good place to tie into it.
+- Replace our LibGuides site with your study guide equivalent. If you do have LibGuides, make sure to leave "mobile.php" on the end of the URL so users get the mobile version.
+- Change the hours to match your open hours.
+- Change the color scheme to one that suits your institution. You can choose from a set of 5 themes (a through e) using the data-theme attribute that's on every page. You can develop a custom theme with the [jQuery Themeroller](http://jquerymobile.com/themeroller/) - I recommend doing so unless you're really in a rush. Building a single theme saves you a lot of bytes in your CSS file, since going with the default includes all the themes which you don't use as well.
+- Remove the analytics comment at the very bottom of the index and insert your own analytics code.
+
+The Mobile Research Resources page might be the only one you don't need to tweak, but you probably want to add links to any subscription resources you own that have mobile interfaces. All EBSCO databases, for instance, automatically detect a visitor's device and serve up the mobile version where appropriate.

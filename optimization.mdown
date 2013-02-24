@@ -1,19 +1,23 @@
-OPTIMIZATION
-Mobile sites need to be as sleek and quick as possible to deliver a good user experience. Here's a few techniques that can make your sites load quicker and run faster.
+# Optimization
 
-IMAGES
-Scale them to the exact size that will be used. I use Yahoo!'s Smush.It (http://www.smushit.com/ysmush.it/) to reduce size even further without sacrificing quality. As an example, my three iOS icons were cut to about 2/3rds size after running through Smush.It, which is a HUGE difference.
-There's also a growing responsive design technique that uses server-side programming to deliver images optimized to particular screen sizes. I didn't employ that in the mobile template but it's worth looking into. See Sencha.io (https://www.sencha.com/products/io/) or Adaptive-Images (http://adaptive-images.com/) for instance.
+Mobile sites need to be as sleek and quick as possible to deliver a good user experience. I have added in a cache manifest by default, which means that the second time someone visits the site it should load lightning-fast because no downloading is required. However, I did not follow several best practices when designing this site because they make editing the template difficult. Here's a few techniques that can make your sites load quicker.
 
-MINIFICATION
-Minification basically removes useless characters like unsemantic whitespace from your documents, resulting in a reduced file size. Scripts, HTML, and CSS shouldn't be affected by minification since it only removes meaningless formatting that is for human readability as opposed to machine. Here are some recommended tools.
-JavaScript - Pretty Diff (http://prettydiff.com/), Packer (http://dean.edwards.name/packer), use the pre-minified jQuery Mobile library (the link I use in the template)
-HTML - Pretty Diff, HTML Compressor (https://code.google.com/p/htmlcompressor), Kangax's HTML Minifier (http://kangax.github.com/html-minifier)
-CSS - Pretty Diff again, cssmin (https://code.google.com/p/cssmin)
+## Images
+
+Scale them to the exact size that will be used. I use Yahoo!'s [Smush.It](http://www.smushit.com/ysmush.it/) or [ImageOptim](http://imageoptim.com/) to reduce size even further without sacrificing quality. As an example, my three iOS icons were cut to about 2/3rds size after running through Smush.It, which is a HUGE difference.
+There's also a growing responsive design technique that uses server-side programming to deliver images optimized to particular screen sizes. I didn't employ that in the mobile template but it's worth looking into. See [Sencha.io](https://www.sencha.com/products/io/) or [Adaptive-Images](http://adaptive-images.com/) for instance. Finally, the proposed `<picture>` element and [its polyfill](https://github.com/scottjehl/picturefill) are another promising means of delivering the correct image size to variegated devices.
+
+## Minification
+
+Minification basically removes useless characters like unsemantic whitespace from your documents, resulting in a reduced file size. Scripts, HTML, and CSS shouldn't be affected by minification since it only removes meaningless formatting that is for human readability as opposed to machine. Here are some suggested tools.
+- For JavaScript - [UglifyJS](http://marijnhaverbeke.nl/uglifyjs), [Pretty Diff](http://prettydiff.com/), [Packer](http://dean.edwards.name/packer), use the pre-minified jQuery Mobile library (the link I use in the template)
+- For HTML - Pretty Diff, [HTML Compressor](https://code.google.com/p/htmlcompressor), Kangax's [HTML Minifier](http://kangax.github.com/html-minifier)
+- For CSS - Pretty Diff again, [cssmin](https://code.google.com/p/cssmin)
 
 On a side note, because of the multiple color swatches in the jQuery Mobile CSS, a large portion of the rules will go unapplied on your site unless you're using all five swatches on one site. Try Chrome's Developer Tools > Audit to see what portion goes unused; on my site, for example, it was 84%. So deleting out unused swatches can seriously reduce the size of your CSS file.
 
-Finally, combining files can cut down on the number of HTTP requests which is huge in terms of mobile performance. If you use other scripts, try combining them into the jQuery Mobile file. Combine any custom CSS into a solitary CSS file. You can even Base64 encode images right into HTML using tools like GreyWyvern's Binary File to Base 64 Encoder (http://www.greywyvern.com/code/php/binary2base64).
+Finally, combining files can cut down on the number of HTTP requests which is huge in terms of mobile performance. If you use other scripts, try combining them into the jQuery Mobile file. Combine any custom CSS into a solitary CSS file. You can even Base64 encode images right into HTML using tools like GreyWyvern's [Binary File to Base 64 Encoder](http://www.greywyvern.com/code/php/binary2base64).
 
-CACHE MANIFEST
-I've included an appcache for the website which means that the site stores certain resources offline to speed things up for repeat visitors. For the appcache to work, you need to serve it with a MIME type of text/cache-manifest. See the .htaccess file for a couple lines you can put in the .htaccess in your web server's root. For more info on using the an application cache, check out the MDN article (https://developer.mozilla.org/en/Using_Application_Cache) or the HTML5Rocks one (http://www.html5rocks.com/en/tutorials/appcache/beginner/). The one tricky part is that, if you change a file (e.g. replace an icon with a new one of the same name) then the appcache continues to serve the old resource. Every time you update something, you must edit the appcache (thus the version number at the beginning).
+## Cache Manifest
+
+I've included an appcache for the website which means that the site stores certain resources offline to speed things up for repeat visitors. For the appcache to work, you need to serve it with a MIME type of `text/cache-manifest`. See [the .htaccess file](.htaccess) for a couple lines you can put in the .htaccess in your Apache server's root. For more info on using the an application cache, check out [the MDN article](https://developer.mozilla.org/en/Using_Application_Cache) or the [HTML5Rocks](http://www.html5rocks.com/en/tutorials/appcache/beginner/) one. The one tricky part is that, if you change a file (e.g. replace an icon with a new one of the same name) then the appcache continues to serve the old resource. Every time you update something, you must edit the appcache (thus the version number at the beginning).
