@@ -63,10 +63,11 @@
 	</div><!-- /header -->
 	<div data-role="content">
 		<h2>Books & DVDs</h2>
-		<form action="http://catalog.chesapeake.edu/Mobile/Search/Results/" method="get" role="search">
-			<label id="chescat-label">Search for books, eBooks, DVDs, & more.</label>
+		<form action="http://www.worldcat.org/search" method="get" role="search">
+			<input type="hidden" name="qt" value="worldcat_org_all">
+			<label id="search-label">Search for books, eBooks, DVDs, & more.</label>
 		    <fieldset>
-                <input type="search" name="t" x-webkit-speech x-webkit-grammar="builtin:search" aria-labelledby="chescat-label" />
+                <input type="search" name="q" x-webkit-speech x-webkit-grammar="builtin:search" aria-labelledby="search-label">
 		        <button type="submit">Find</button>
 		    </fieldset>
 		</form>
