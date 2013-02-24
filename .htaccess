@@ -1,2 +1,7 @@
+# These are the minimum steps necessary to get an appcache working on the mobile site
+# I would strongly recommend looking into an .htaccess template which applies optimizations
+# See the HTML5 Boilerplate's .htaccess, for instance
+# github.com/h5bp/html5-boilerplate/blob/master/.htaccess
+
 AddType text/cache-manifest .appcache
 ExpiresByType text/cache-manifest "access plus 0 seconds"
