@@ -41,7 +41,7 @@
 			<li><a href="http://libguides.com/mobile.php">Study Guides</a></li>
 			<li><a href="#where" data-rel="dialog" data-transition="pop">Where is the Library?</a></li>
 		</ul>
-		<h2 class=center>Your Library</h2>
+		<h2 class="center">Your Library</h2>
 	</div><!-- /content -->
 	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="b">
 		<div class="controls" data-role="controlgroup" data-type="horizontal">
@@ -91,10 +91,10 @@
 		<a data-rel="back" data-role="button" data-icon="arrow-l" data-direction="reverse">Back</a>
 		<h1>Library Mobile</h1>
 	</div><!-- /header -->
-	<div data-role=content>
+	<div data-role="content">
 		<h2>Online Resources</h2>
 		<ul data-role="listview" data-inset="true">
-			<li><a href=http://m.gutenberg.org/ title="Free eBooks">Project Gutenberg<br><em>
+			<li><a href="http://m.gutenberg.org/" title="Free eBooks">Project Gutenberg<br><em>
 				26,000 free eBooks</em></a></li>
 			<li><a href="http://m.medlineplus.gov" title="MedlinePlus">MedlinePlus<br><em>
 				definitions of medical terms</em></a></li>
@@ -192,7 +192,7 @@
 	<div data-role="header" data-theme="b">
 		<h1>Library Mobile</h1>
 	</div><!-- /header -->
-	<div data-role="content" data-theme="b" class=center>
+	<div data-role="content" data-theme="b" class="center">
 		<h2>Where is the Library?</h2>
 		<!-- *CHANGE* map coordinates to center on your location -->
 		<p><img alt="map of Chesapeake College campus with a blue marker on the LRC"
@@ -200,12 +200,13 @@
 		</p>
 	</div><!-- /content -->
 </div><!-- end Google Maps page -->
+
 <!-- assume anything link pointing to an HTTP/S URL is external -->
-<script type="text/javascript">
+<script>
 	(function($) {
-		$(document).ready(function() {
-			$('a[href^=http]').attr('rel', 'external');
-		});
+		$( function() {
+			$( 'a[href^=http]' ).attr( 'rel', 'external' );
+		} );
 	}(jQuery));
 </script>
 </body>
