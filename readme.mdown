@@ -1,13 +1,15 @@
 # minlo - a library mobile site template
 
-A mobile template that other libraries can feel free to run with. Based on a template written by Jason Clark of Montana Stata University which is available here: https://www.lib.montana.edu/~jason/files.php
+A mobile website template that other libraries can customize and reuse. Based on [a template](https://www.lib.montana.edu/~jason/files.php) by Jason Clark of Montana Stata University.
 
-Utilizes [jQuery Mobile](http://jquerymobile.com/) and [the Google Maps Static API](https://code.google.com/apis/maps/documentation/staticmaps/).
+See [the demo version](http://phette23.github.com/minlo/) to get a feel for the template.
+
+Utilizes [jQuery Mobile](http://jquerymobile.com/) and [the Google Maps Static API](https://code.google.com/apis/maps/documentation/staticmaps/). Liberally commented and easy [to customize](customization.mdown). If you can edit HTML, you can make your own mobile site from this template.
 
 I'd strongly recommend reading over [the jQuery Mobile documentation](http://view.jquerymobile.com/1.3.0/) if you want to make extensive edits to this template. It's not too hard to figure out but it doesn't work like a regular website (uses AJAX to load pieces of a single HTML file instead of a multi-page site) so the code may look confusing at first.
 
-See [the customization doc](customization.mdown) for information on adapting the template to your specific needs.
+See [customization.mdown](customization.mdown) for information on adapting the template to your specific needs.
 
 # License
 
-GPL v3 - http://www.gnu.org/licenses/gpl.html
+[GPL v3](http://www.gnu.org/licenses/gpl.html)
