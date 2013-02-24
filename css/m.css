@@ -1,3 +1,6 @@
-/*custom styles for jquery mobile*/
-.controls {text-align: center;}
-.center {text-align:center;}
+/* custom styles */
+h2,
+.controls,
+.center {
+    text-align: center;
+}
