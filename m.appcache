@@ -1,17 +1,22 @@
 CACHE MANIFEST
-# v12
+# v14
 
 CACHE:
 # Images
-//maps.google.com/maps/api/staticmap?center=38.952484,-76.083992&zoom=15&size=130x130&markers=color:blue|38.953235,-76.084571&scale=2&maptype=satellite&mobile=true&sensor=false
+//code.jquery.com/mobile/1.3.1/images/ajax-loader.gif
+//code.jquery.com/mobile/1.3.1/images/icons-18-white.png
+//code.jquery.com/mobile/1.3.1/images/icons-18-black.png
+//code.jquery.com/mobile/1.3.1/images/icons-36-white.png
+//code.jquery.com/mobile/1.3.1/images/icons-36-black.png
 
 # CSS
-//code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css
+//code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css
 css/m.css
 
 # JavaScript
-//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js
-//code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js
+# for some reason HTTP URL won't work, default to HTTPS
+https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
+//code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js
 js/custom.js
 
 NETWORK:
