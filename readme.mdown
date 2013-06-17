@@ -1,12 +1,12 @@
 # minlo - a library mobile site template
 
-A mobile website template that other libraries can customize and reuse. Based on [a template](https://www.lib.montana.edu/~jason/files.php) by Jason Clark of Montana Stata University.
+A mobile website template that other libraries can customize and reuse. Based on [a template](https://www.lib.montana.edu/~jason/files.php) by Jason Clark of Montana State University.
 
-See [the demo version](http://phette23.github.com/minlo/) to get a feel for the template.
+See [the demo version](http://phette23.github.io/minlo/) to get a feel for the template.
 
-Utilizes [jQuery Mobile](http://jquerymobile.com/) and [the Google Maps Static API](https://code.google.com/apis/maps/documentation/staticmaps/). Liberally commented and easy [to customize](customization.mdown). If you can edit HTML, you can make your own mobile site from this template.
+Utilizes [jQuery Mobile](http://jquerymobile.com/) and [the Google Maps Static API](https://code.google.com/apis/maps/documentation/staticmaps/). Liberally commented and easy [to customize](customization.mdown). If you can edit <abbr title="HyperText Markup Language">HTML</abbr>, you can make your own mobile site from this template.
 
-I'd strongly recommend reading over [the jQuery Mobile documentation](http://view.jquerymobile.com/1.3.0/) if you want to make extensive edits to this template. It's not too hard to figure out but it doesn't work like a regular website (uses AJAX to load pieces of a single HTML file instead of a multi-page site) so the code may look confusing at first.
+I'd strongly recommend reading over [the jQuery Mobile documentation](http://view.jquerymobile.com/1.3.0/) if you want to make extensive edits to this template. It's not too hard to figure out but it doesn't work like a regular website (uses <abbr title="Asynchronous JavaScript And XML">AJAX</abbr> to load pieces of a single <abbr title="HyperText Markup Language">HTML</abbr> file instead of a multi-page site) so the code may look confusing at first.
 
 See [customization.mdown](customization.mdown) for information on adapting the template to your specific needs.
 
