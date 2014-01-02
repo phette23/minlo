@@ -13,3 +13,5 @@ See [customization.mdown](customization.mdown) for information on adapting the t
 # License
 
 [GPL v3](http://www.gnu.org/licenses/gpl.html)
+
+![Analytics](https://ga-beacon.appspot.com/UA-29080462-2/minlo/readme?pixel)
