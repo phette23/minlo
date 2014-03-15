@@ -1,17 +1,17 @@
 CACHE MANIFEST
-# v15
+# v16
 
 CACHE:
 # Images
-//code.jquery.com/mobile/1.4.0/images/ajax-loader.gif
+//code.jquery.com/mobile/1.4.2/images/ajax-loader.gif
 
 # CSS
-//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css
+//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css
 css/m.css
 
 # JavaScript
 //ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
-//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js
+//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js
 js/custom.js
 
 NETWORK:
