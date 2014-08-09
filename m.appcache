@@ -3,15 +3,15 @@ CACHE MANIFEST
 
 CACHE:
 # Images
-//code.jquery.com/mobile/1.4.2/images/ajax-loader.gif
+//code.jquery.com/mobile/1.4.3/images/ajax-loader.gif
 
 # CSS
-//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css
+//code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css
 css/m.css
 
 # JavaScript
 //ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
-//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js
+//code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js
 js/custom.js
 
 NETWORK:
